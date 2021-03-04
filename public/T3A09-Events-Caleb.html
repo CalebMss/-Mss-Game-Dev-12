@@ -1,0 +1,62 @@
+<h1 align=center>T3A09-Events-Caleb</h1>
+Did the output span work: <span id="mySpan01">...</span><br><br>
+
+onClick event: <input type=button value="onclick event" onclick="{
+  // alert('hey, onclick is working);
+   document.getElementById('mySpan01').innerHTML = 'yes it did'
+}"> <br><br>
+
+<input type="text" onkeypress="myFunction()">
+
+<script>
+function myFunction() {
+  alert("What did you just press? Stop it!!!");
+}
+</script>
+<br><br>
+
+<p id="myP" onmousedown="mouseDown()" onmouseup="mouseUp()">
+Click me, see what happens
+</p>
+
+<script>
+function mouseDown() {
+  document.getElementById("myP").style.color = "red";
+}
+
+function mouseUp() {
+  document.getElementById("myP").style.color = "blue";
+}
+</script> <br><br>
+
+<div onmousedown="WhichButton(event)">Click this text.
+  <p>
+  1 = Left Click<br>
+  2 = Right Click<br>
+  4 = Mouse Wheel<br>
+
+  </p>
+</div>
+
+<h2>You clicked: <span id="demo"></span></h2>
+
+<script>
+function WhichButton(event) {
+  var x = event.buttons;
+  document.getElementById("demo").innerHTML = x;
+}
+</script> <br><br>
+
+<img onmouseover="bigImg(this)" onmouseout="normalImg(this)" border="0" src="inspector" alt="inspector">
+
+<script>
+function bigImg(x) {
+  x.style.height = "64px";
+  x.style.width = "64px";
+}
+
+function normalImg(x) {
+  x.style.height = "32px";
+  x.style.width = "32px";
+}
+</script>
