@@ -2,11 +2,12 @@
 
 <input id="myText01" type=text value=3 ><br><br>
 
-<input type=button value="run first" onClick="{
-  //x = 5
+<input type=button value="Show X" onClick="{
+    x = document.getElementById('myText01').value
+  // alert('x: '+ x)
+   document.getElementById('mySpan01').innerHTML = 'X is '+x                                        
 
-  x = document.getElementById('myText01').value
-  alert('x: '+ x)
 }"><br><br>
 
-<span id="mySpan01" >Beans</span><br><br>
+<span id="mySpan01" >...</Span><br><br>
+
