@@ -1,7 +1,7 @@
 <h1 align=center>T3A12-Decisions-if-Caleb.html</h1>
 
 <input id="myText01" type=text value=3 ><br><br>
-<input type=button value="Show X" onClick="{
+<input type=button value="Show X" onclick="{
     x = document.getElementById('myText01').value
     myTemp = '...........'
     if (x >= 2){myTemp = '3'}
@@ -19,7 +19,7 @@
     if (myX > 2 && myY < -4){
        myTemp = 'x greater than 2 and y less than -4'
     } else {
-       myTemp = ' is not'
+       myTemp = 'not'
     }
     document.getElementById('mySpan02').innerHTML = myTemp
 }"><br>
