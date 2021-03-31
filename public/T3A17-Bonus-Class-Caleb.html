@@ -13,9 +13,14 @@ class myAnimal {
        document.getElementById('myDiv131').innerHTML = 'Hello '+ this.myName + this.myAge
     }
  }  // end class myAnimal
-                                                             
+                                      
+         class myCat extends myAnimal {                                                                      
+     myShow(){
+       document.getElementById('myDiv131').innerHTML = this.myName + ' is a loud cat who is ' + this.myAge + ' years old<br>'
+    }                                                                   
+}    // end extended class myCat                                                                                                
                                              
-   myPet = new myAnimal('Fluffy', 14)
+   myPet = new myAnimal('Chief', 14)
    myPet.myShow()                                                                           
 }"><br><br>
 
