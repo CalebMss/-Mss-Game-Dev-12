@@ -4,17 +4,14 @@ Store this input variable into x:
 <input id="myText01" type=text value=3 ><br><br>
  
 <input type=button value="Show X" onclick="{
+document.getElementById('mySpan01').innerHTML = '' //Blank Out The Span for 
+                                           (myLoop = 0;  myLoop <= document.getElementById('myTextLoop').value;    myLoop++){
+let myTemp='';for(let i=0; i<30; i++)
+   {myTemp += 'Loop Number: ' + i + '<br>';}
 
-let myTemp='';
-for(let i=0; i<30; i++){
-myTemp += 'Loop Number: ' + i + '<br>';
-}
 document.getElementById('mySpan01').innerHTML=myTemp
+                                           
 
-}"><br><br>
-{   
-                                                               
-       document.getElementById('myTemp').innerHTML += 'Loop #'+ myLoop+'<br>'  
-                                                               
+}"><br><br>                                                    
 
 <span id="mySpan01">...</Span><br><br>
