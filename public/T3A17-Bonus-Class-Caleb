@@ -1,5 +1,3 @@
-
-
 <h1 align=center>T3A17-bonus-class-Caleb</h1>
 
 Enter an age into the class: <input id="myText01" type=text value=17 ><br><br>
