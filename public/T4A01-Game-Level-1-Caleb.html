@@ -53,22 +53,24 @@ function myCheckAll(){
          myCheckAll()
       }
 }">
+</script>
+</head>
 
-<h1 align=center>T4A04-WASD-Fred.html</h1>
+<body  onKeyDown="{
+     let myAlphaKey = event.key
+     document.getElementById('myDiv01').innerHTML = 'You typed: ' + myAlphaKey.toLowerCase()
 
 
-<input type=button value="Move 10 pixels right" onClick="{
-                        
-  document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
-  myCheckAll()
-                        
+      if (myAlphaKey.toLowerCase() == 'arrowleft') {
+         document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
+         myCheckAll()
+     }
+
+      if (myAlphaKey.toLowerCase() == 'a') {   // go left
+         document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
+         myCheckAll()
+      }
 }">
-
-<input type=button value="Move 10 pixels Diagonal" onClick="{
-                        
-  document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
-  document.getElementById('mySpan01').style.top  = parseInt(document.getElementById('mySpan01').style.top)  - 10
-  myCheckAll()
                         
 }">
 
