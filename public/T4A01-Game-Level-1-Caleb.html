@@ -1,6 +1,18 @@
-   
-<span style="padding-right:3px; padding-top: 3px;">
+</script>
+</head>
 
-    <img class="manImg" src="Level 1 Game. Attack 2"></img>
+<body  onKeyDown="{
+     let myAlphaKey = event.key
+     document.getElementById('myDiv01').innerHTML = 'You typed: ' + myAlphaKey.toLowerCase()
 
-    </span>
+
+      if (myAlphaKey.toLowerCase() == 'arrowright') {
+         document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
+         myCheckAll()
+     }
+
+      if (myAlphaKey.toLowerCase() == 'd') {   // go right
+         document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
+         myCheckAll()
+      }
+}">
