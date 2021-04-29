@@ -35,11 +35,8 @@ function myCheckAll(){
 
 }
 
-
 </script>
 </head>
-
-
 <body  onKeyDown="{
      let myAlphaKey = event.key
      document.getElementById('myDiv01').innerHTML = 'You typed: ' + myAlphaKey.toLowerCase()
@@ -53,9 +50,7 @@ function myCheckAll(){
       if (myAlphaKey.toLowerCase() == 'd') {   // go right
          document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
          myCheckAll()
-      if (myAlphakey.toLowerCase() == 's') {  // go down
-                   document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
-         myCheckAll()
+  
 }">
 
 <div id="myDiv01">...</div>
@@ -65,13 +60,6 @@ function myCheckAll(){
   myCheckAll()
                         
 }">
-
-
-<input type=button value="Move 10 pixels Diagonal" onClick="{
-                        
-  document.getElementById('mySpan01').style.left = parseInt(document.getElementById('mySpan01').style.left) + 10
-  document.getElementById('mySpan01').style.top  = parseInt(document.getElementById('mySpan01').style.top)  - 10
-  myCheckAll()
                         
 
 <span id="mySpan01" style="position:absolute; left:100; top:150; width:45; height:30">
