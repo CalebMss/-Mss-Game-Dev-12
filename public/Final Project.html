@@ -2,21 +2,6 @@
 
 <input id="myTextLife" type="number" value="100">
  <br>
-  
-function myCheckAll(){
-
-  
-  if(myHitOther('mySpan01', 'mySpan02')){
-    document.getElementById('myTextLife').value = parseInt(document.getElementById('myTextLife').value) - 1
-  }
-
-  // your other checks go here
-
-  if(parseInt(document.getElementById('myTextLife').value)  <=0  ){    // life points at zero
-    alert('You Lose!')
-    location = 'Final Project.html'    // refresh page
-  }
-
  
 
 
@@ -83,6 +68,24 @@ function myCheckAll(){
                           
 }">
 
+ function myCheckAll(){
+
+  
+  if(myHitOther('mySpan01', 'mySpan02')){
+    document.getElementById('myTextLife').value = parseInt(document.getElementById('myTextLife').value) - 1
+  }
+
+  // your other checks go here
+
+  if(parseInt(document.getElementById('myTextLife').value)  <=0  ){    // life points at zero
+    alert('You Lose!')
+    location = 'Final Project.html'    // refresh page
+  }
+
+ 
+ 
+ 
+ 
 
 <div id="myDiv01">...</div>
 
